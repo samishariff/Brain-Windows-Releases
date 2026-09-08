@@ -1,27 +1,35 @@
+<img src="assets/brain-icon-256.png" width="96" height="96" alt="Brain logo">
+
 # Brain for Windows
 
-Brain helps you keep conversations, meeting notes, and next steps together. It is
-shared by Sami Shariff, with speech and summary tools that can run on your PC.
+Record the conversation. Keep the useful details.
 
-**Downloads are being prepared.** This repository and its website are being set
-up for the next Windows preview. No app download or automatic-update feed is
-published here yet. Those will be added after the rebuilt app passes its required
-checks.
+Brain brings your meetings, notes, and next steps together on your Windows PC.
+See the actual app, including its meeting assistant, on the
+[Brain website](https://samishariff.github.io/Brain-Windows-Releases/).
 
-- [Brain's website](https://samishariff.github.io/Brain-Windows-Releases/)
-- [Your privacy](privacy.html)
-- [Get help](help.html)
+**Downloads for the Windows preview are being prepared.** This repository does
+not yet offer an installer or an automatic-update feed.
 
-Installation, updates, and recording on different devices still need testing.
-Google and Microsoft calendar sign-in is still being prepared. If Sami has
-already shared an earlier preview with you, keep your existing copy and backups
-while this work is finished.
+- [Getting started](https://samishariff.github.io/Brain-Windows-Releases/help/)
+- [Your privacy](https://samishariff.github.io/Brain-Windows-Releases/privacy/)
+- [What is included and still being checked](https://samishariff.github.io/Brain-Windows-Releases/release-notes.html)
 
-This repository currently contains only the public information website. Brain's
-application source stays in a separate private repository. App downloads,
-automatic-update information, and the accompanying notices will be added here
-when they are ready for review and testing. No private signing key is included.
+The screenshots show the real Windows preview with fictional meeting content.
+Speech and summary tools can run on your PC; optional online services are your
+choice. Google and Microsoft calendar sign-in is still being prepared.
 
-For help, contact Sami through your usual private channel. Keep recordings,
-meeting text, account details, passwords, and diagnostic reports out of public
-posts.
+This public repository holds the website, approved images, public release
+information, and third-party notices. Brain's application source and signing
+keys stay private. When downloads are ready, the installers will be hosted in
+this repository's Releases, and this website will provide the update feed.
+
+If Sami has already shared an earlier preview with you, keep your existing copy
+and backups. Installation, installed updates, and real recording devices still
+need testing. For help, contact Sami through your usual private channel.
+
+Keep recordings, meeting text, account details, passwords, and diagnostic reports
+out of public posts.
+
+Third-party software notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The website's Manrope font is distributed with its [open-font licence](assets/Manrope-OFL.txt).
