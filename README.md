@@ -11,7 +11,8 @@ See the actual app, including its meeting assistant, on the
 **Brain for Mac is available now** — download it from the
 [Mac page](https://samishariff.github.io/Brain-Windows-Releases/mac.html)
 (macOS 26 or later, Apple silicon). The Mac app is hosted in this repository's
-Releases as a signed, notarized disk image.
+Releases as a signed, notarized disk image, and the installed app checks this
+repository's `mac-v<version>` releases to update itself.
 
 **Downloads for the Windows preview are being prepared.** This repository does
 not yet offer a Windows installer or an automatic-update feed.
