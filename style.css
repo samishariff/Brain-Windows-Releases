@@ -187,3 +187,14 @@ body[data-platform="mac"] .platform-windows, body[data-platform="windows"] .plat
   .app-screenshot, .chat-detail { border: 1px solid CanvasText; box-shadow: none; }
   .preview-notice, .closing-section, .contents { border: 1px solid CanvasText; }
 }
+
+.reading details.verify { margin-top: 22px; border: 1px solid var(--line); border-radius: 12px; padding: 14px 22px; }
+.reading details.verify summary { cursor: pointer; font-size: 15px; font-weight: 650; color: var(--ink); list-style: none; }
+.reading details.verify summary::-webkit-details-marker { display: none; }
+.reading details.verify summary::before { content: "+"; display: inline-block; width: 18px; color: var(--teal); font-weight: 700; }
+.reading details.verify[open] summary::before { content: "\2212"; }
+.reading details.verify p { margin-top: 12px; }
+.reading details.verify code { display: block; padding: 12px 14px; border-radius: 8px; background: var(--wash); color: var(--ink); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.reading .notice-list { list-style: none; padding-left: 0; }
+.reading .notice-list li { padding-left: 0; }
+.reading .notice-list strong { display: block; }
