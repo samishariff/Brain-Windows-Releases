@@ -22,7 +22,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="index.html" aria-label="Brain home"><img src="assets/brain-icon-96.png" width="44" height="44" alt=""><span>Brain</span></a>
-    <nav aria-label="Main navigation"><a href="index.html#inside-brain">Inside Brain</a><a href="mac.html">Mac setup</a><a href="help.html">Help</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation"><a href="index.html#inside-brain">Inside Brain</a><a href="mac.html">Mac setup</a><a href="help.html" class="platform-windows">Help</a><a href="privacy.html">Privacy</a></nav>
   </header>
   <main id="main" class="wrap">
 
@@ -35,6 +35,26 @@
 <section id="full"><h2>Full license texts</h2><p>These are the complete notices, exactly as they ship inside each app. They open as plain text.</p><ul><li><a href="mac-notices.md">Brain for Mac — third-party notices</a></li><li><a href="THIRD_PARTY_NOTICES.md">Brain for Windows — third-party notices</a>, which links to each individual license file.</li></ul><p>Brain does not change the terms of any of these components.</p></section></div>
     </div>
   </main>
-  <footer class="site-footer wrap"><p>Brain<span>Shared by Sami Shariff</span></p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="mac.html">Mac setup</a><a href="help.html">Help</a><a href="privacy.html">Privacy</a><a href="release-notes.html">Preview notes</a><a href="notices.html" aria-current="page">Notices</a></nav></footer>
+  <footer class="site-footer wrap"><p>Brain<span>Shared by Sami Shariff</span></p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="mac.html">Mac setup</a><a href="help.html" class="platform-windows">Help</a><a href="privacy.html">Privacy</a><a href="mac-notes.html" class="platform-mac">Preview notes</a><a href="release-notes.html" class="platform-windows">Preview notes</a><a href="notices.html" aria-current="page">Notices</a></nav></footer>
+  <script>
+  (function () {
+    var body = document.body, key = "brain-platform";
+    function apply(p) {
+      body.setAttribute("data-platform", p);
+      document.querySelectorAll("[data-platform-choice]").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-platform-choice") === p ? "true" : "false");
+      });
+    }
+    var saved = null; try { saved = localStorage.getItem(key); } catch (e) {}
+    var isMac = /Mac|iPhone|iPad/.test(navigator.platform || "") || /Macintosh/.test(navigator.userAgent || "");
+    apply(saved === "mac" || saved === "windows" ? saved : (isMac ? "mac" : "windows"));
+    document.querySelectorAll("[data-platform-choice]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var p = b.getAttribute("data-platform-choice"); apply(p);
+        try { localStorage.setItem(key, p); } catch (e) {}
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
