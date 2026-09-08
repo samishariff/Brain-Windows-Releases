@@ -90,6 +90,17 @@ figcaption a { flex-shrink: 0; }
 .site-footer p span { display: block; color: var(--muted); font-size: 12px; font-weight: 400; margin-top: 4px; }
 .site-footer nav { display: flex; flex-wrap: wrap; column-gap: 26px; row-gap: 12px; }
 .site-footer nav a { min-height: 32px; }
+/* Mac / Windows: one page, one aesthetic, a segmented choice in the hero. */
+.platform-toggle { display: inline-flex; padding: 4px; margin-top: 28px; background: var(--wash); border: 1px solid var(--line); border-radius: 999px; }
+.platform-option { appearance: none; border: 0; margin: 0; min-height: 40px; padding: 8px 22px; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-size: 15px; font-weight: 650; line-height: 1.4; cursor: pointer; transition: background-color 140ms ease-out, color 140ms ease-out; }
+.platform-option:hover { color: var(--ink); }
+.platform-option[aria-pressed="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 2px #213a5826, 0 6px 16px -10px #213a5866; }
+.platform-option:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.hero-actions .text-link { font-size: 15px; font-weight: 600; }
+.release-state code { font-family: ui-monospace, Menlo, monospace; font-size: 11px; word-break: break-all; }
+body[data-platform="mac"] .platform-windows, body[data-platform="windows"] .platform-mac { display: none !important; }
+.brand-platform .platform-mac, .brand-platform .platform-windows { display: inline; }
+@media (forced-colors: active) { .platform-toggle { border: 1px solid CanvasText; } .platform-option[aria-pressed="true"] { border: 1px solid ButtonText; } }
 /* Reading pages share the identity with a quieter composition. */
 .reading-header { padding-top: 64px; padding-bottom: 44px; max-width: 840px; }
 .reading-header h1 { font-size: clamp(40px, 4.2vw, 58px); }

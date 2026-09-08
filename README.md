@@ -8,8 +8,13 @@ Brain brings your meetings, notes, and next steps together on your Windows PC.
 See the actual app, including its meeting assistant, on the
 [Brain website](https://samishariff.github.io/Brain-Windows-Releases/).
 
+**Brain for Mac is available now** — download it from the
+[Mac page](https://samishariff.github.io/Brain-Windows-Releases/mac.html)
+(macOS 26 or later, Apple silicon). The Mac app is hosted in this repository's
+Releases as a signed, notarized disk image.
+
 **Downloads for the Windows preview are being prepared.** This repository does
-not yet offer an installer or an automatic-update feed.
+not yet offer a Windows installer or an automatic-update feed.
 
 - [Getting started](https://samishariff.github.io/Brain-Windows-Releases/help/)
 - [Your privacy](https://samishariff.github.io/Brain-Windows-Releases/privacy/)
