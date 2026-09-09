@@ -3,7 +3,7 @@
 # Brain — release channel
 
 **The Brain website has moved to [samishariff.github.io/Brain](https://samishariff.github.io/Brain/)**
-(repository [samishariff/Brain-Meeting](https://github.com/samishariff/Brain)).
+(repository [samishariff/Brain](https://github.com/samishariff/Brain)).
 Every page here now redirects there.
 
 This repository remains the public release channel: the signed, notarized
