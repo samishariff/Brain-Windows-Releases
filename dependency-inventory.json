@@ -1,0 +1,997 @@
+{
+    "formatVersion":  2,
+    "scope":  "published-dotnet-dependencies-and-bundled-ai-runtime",
+    "inputs":  [
+                   {
+                       "file":  "Brain.Windows.App.deps.json",
+                       "origin":  "msix-payload",
+                       "sha256":  "e1b3359619fe0b0c66e009ff2519b925509310a177446387dd161349342235c4",
+                       "executableFile":  null,
+                       "executableSha256":  null
+                   },
+                   {
+                       "file":  "Brain.Speech.Worker.deps.json",
+                       "origin":  "msix-payload",
+                       "sha256":  "5a6b47d893d783f759862cbc970b91454b63831d911d52d02abaeba60bb8be97",
+                       "executableFile":  "Brain.Speech.Worker.exe",
+                       "executableSha256":  "e92c0c99c4343541f43eb8b3695ddc413ce718c900c62bffba744aea4bfb45e5"
+                   },
+                   {
+                       "file":  "Brain.Updater.deps.json",
+                       "origin":  "single-file-helper-build",
+                       "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
+                       "executableFile":  "Helpers/updater/Brain.Updater.exe",
+                       "executableSha256":  "3c74e0f9a805635d619b2ab58505fc176b1ad161469694fd61bd302301da947b"
+                   },
+                   {
+                       "file":  "Brain.Calendar.Worker.deps.json",
+                       "origin":  "single-file-helper-build",
+                       "sha256":  "adf6657637279c55cf50535fac69c833ff62fead91052aea9da42244a82ff3f7",
+                       "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
+                       "executableSha256":  "26a6df9d4068b88c5f165a41428aba444baa1a5fb7e22eb574f47403758529e4"
+                   }
+               ],
+    "packages":  [
+                     {
+                         "id":  "Ical.Net",
+                         "version":  "5.2.3",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-zROvmrRPKqND0e0Bt/wSY+d8iYtL4+sP9mORyjT/ySBiIDfik4iovTjS+L9PFg+zoXfkJ5eBTHK2lX9c7lganw==",
+                         "nugetArchiveSha256":  "8bc1f27653fc6b20ad094ef2286e9e610b16f935158a31c84fdf51d22b813286",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://github.com/ical-org/ical.net",
+                         "authors":  "ical-org maintainers and contributors",
+                         "repositoryCommit":  "1344396c18dfe7349584709990f431931bc0b6be"
+                     },
+                     {
+                         "id":  "Microsoft.Data.Sqlite",
+                         "version":  "10.0.11",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-7je7UELzm131GiLYc4PpZvfKXIgIyzPM+v+tjcd/nbnuWRfgcONYKzDTqJlURxwVCFsVnlpmq6y6yn4qvR8QXQ==",
+                         "nugetArchiveSha256":  "9b35525787a92c1c88ebce54e76ca120e07ef6ea7337425530d6e461c38d81b6",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "e2f47b0110ed922f21a1522da67279133ce28f32"
+                     },
+                     {
+                         "id":  "Microsoft.Data.Sqlite.Core",
+                         "version":  "10.0.11",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-hubA20AGenQ4Sx0ElWaPpB8DISjXpdx463+1zOGRslsT0e/t/06ITv+pHsop8CcJ0d8PZLfgnT7juCDVD79Dkw==",
+                         "nugetArchiveSha256":  "cc25e443b5e63bed99c846f584fc2be92f077cb042eaa376c39c247bea866f97",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "e2f47b0110ed922f21a1522da67279133ce28f32"
+                     },
+                     {
+                         "id":  "Microsoft.Identity.Client",
+                         "version":  "4.88.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-7Eg+0J3DQyy/HNMucGScRBCcxetZUJkti8KNxY6K/HtM5BsyYQpc25agW0xxKmjvpaZY9XcEbyUL7DbSkIIcZQ==",
+                         "nugetArchiveSha256":  "5077034b825ca49882d88ebf55e89533c225a83d32ff71ade199e9805c8c91de",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=844761",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f6c9c0ac52f1d4defebe034c3a24f18f4ca3b58f"
+                     },
+                     {
+                         "id":  "Microsoft.Identity.Client.Extensions.Msal",
+                         "version":  "4.88.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-9thwwy5LGQJuUcTWQ+P22aGD7kFc+03NCEE81fEzQeb1zlXuVPZxfrq/5D5IoXFDRVLdF8UiWLG1rNidmJwkAQ==",
+                         "nugetArchiveSha256":  "1e088b8609bb09f73ada96917470ee0b67392225a7ed81899122b2cf62f6fe9a",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=844761",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f6c9c0ac52f1d4defebe034c3a24f18f4ca3b58f"
+                     },
+                     {
+                         "id":  "Microsoft.IdentityModel.Abstractions",
+                         "version":  "8.14.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-iwbCpSjD3ehfTwBhtSNEtKPK0ICun6ov7Ibx6ISNA9bfwIyzI2Siwyi9eJFCJBwxowK9xcA1mj+jBWiigeqgcQ==",
+                         "nugetArchiveSha256":  "6e40aecf55a3e7a37e2c758bbc728b702b4846a04afb7939bc3daa7c1ef15ca9",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "c8f7d87bcda35557a68f6cb9c55856a2ee733856"
+                     },
+                     {
+                         "id":  "Microsoft.ML.OnnxRuntime.Managed",
+                         "version":  "1.22.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-hYGYf0BaHiTfb623kD36pYpFN0rh2Znk3QS+ZWWxnTV6iDzl1KUJYaxf7/stz28r1w6HOqUqgWcT1nOYXuf8ew==",
+                         "nugetArchiveSha256":  "5651fdfdaeca943a91c7631c7549dc5a6219a458d004a2c5db653c9bacab4507",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "LICENSE.txt",
+                         "licenseFileSha256":  "c250d6278f0b47a6439fb7592b08b58a55eb9f535aa49a1db63211c3f982b674",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/Microsoft/onnxruntime",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "89746dc19a0a1ae59ebf4b16df9acab8f99f3925"
+                     },
+                     {
+                         "id":  "Microsoft.Web.WebView2",
+                         "version":  "1.0.3719.77",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-t+ucyKw5NTwMjsUrDF6R9Lk40lpcKQD1/HgyGFxl49tdA4h9dKlsj6FYGEmDRpFNfnTpENuTypMcdbrlkqBdDA==",
+                         "nugetArchiveSha256":  "2f6be3a10a1a8d6d1fde986af4131dab344f8181fffe75590824e0f4b037ed73",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "LICENSE.txt",
+                         "licenseFileSha256":  "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://aka.ms/webview",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK",
+                         "version":  "2.4.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-sdS48CFL5EqzFB5a63Rr6qdK5l8NqmxWKJ/DXwsF8waCDLXdD8SjSnIOfpxzq4f4aUhaeXEAwVRA9rD8QvM+2g==",
+                         "nugetArchiveSha256":  "6ec2ebb6add33ecebac1f5773ad4cabe934b82fb18d7bea98e011bb0fc0a37b9",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/microsoft/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.AI",
+                         "version":  "2.4.4",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-nwgZKIWa97bxP3UYahv9LK1WAftzsEu3x/Ws9hCs5QG9mOf25ODrhv7BOGfYvptEhrh+XhoqCa8etSVQRr8cmw==",
+                         "nugetArchiveSha256":  "53ed1ba75c0d87b3d7aef11a97df50c710f484b99e4cad9dce49877d061ca6b7",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/microsoft/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.Foundation",
+                         "version":  "2.3.9",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-lnfSoKvuMN2nv/NyMDWHX5u2K/tdg8AiyW+z30/YmCbJZp1k38B8/d4pKf+RjgkQbSGbIikN4irae72FXA3X5Q==",
+                         "nugetArchiveSha256":  "230bc605a3fc9ed689b2117056c5274923bf58b453fa44edde18a168bbf628be",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://aka.ms/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.InteractiveExperiences",
+                         "version":  "2.1.6",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-j7pyWfsXPQFTEWX22GgC6/JDzliBpwKESJzglCOv8wRJI7SmXiPdYqQnBI2gSKC1slJIpkczVdmmpvHmxPxyOw==",
+                         "nugetArchiveSha256":  "de7b5907c63c8a79606ccc8f0d98943b154a2e62312308187e8cdc3304ff3d0b",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://aka.ms/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.Search",
+                         "version":  "2.4.4",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-3IXnSBTBBQpqp3B+0R5FUEzcAHFwq4DVEDukVdqk3nP+X4LA10yPLO/uQgDaxtDxwhMJcEXX3vrKFdQTWSAOwg==",
+                         "nugetArchiveSha256":  "9120aa80d14a6efb61940f87fc8dc7d11b4d80383a4421535a8fd96d6b446b98",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/microsoft/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.Widgets",
+                         "version":  "2.0.5",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-lRz+8+QU65gV8hRzLVE+GRsPKZ42lnzqkmsw96HzQd/DuFYfr4JYpUU7ZZ5YrkV2EfQe4BCmoRKAeZ3WwalMcg==",
+                         "nugetArchiveSha256":  "7f1b585ef8f012784d2cb91b86e809814ceccab74183a5979ef45db141779cb5",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/microsoft/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "Microsoft.WindowsAppSDK.WinUI",
+                         "version":  "2.3.6",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-01ImKF+wYm2aehRWS2GpKeoBL1RutDcJOUSTSo3fkLjOSr+gKPcUGDAtIUwZcQTvHWOct6hT1jKIdyxbJIhpBA==",
+                         "nugetArchiveSha256":  "3404f14b5aad656024cf23efab49373e14be4129b1e7d8cdd18dd26712d3c8e2",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "file",
+                         "license":  "license.txt",
+                         "licenseFileSha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501",
+                         "licenseUrl":  "https://aka.ms/deprecateLicenseUrl",
+                         "projectUrl":  "https://github.com/microsoft/windowsappsdk",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "NAudio",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-viewQ/yBZKOckMabTWnO+xb7ACw7k9BgjDqwYxOHRyFGQX7tEu67Vcn4rbcPWErp+DkkYQye6pKmdrB1xQNJGw==",
+                         "nugetArchiveSha256":  "6d53bfcd0d2837aec6fe268c446b1ece3e6d207b8d64b6bf61f5b4e7b18a92db",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath \u0026 Contributors",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.Asio",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-Ccqs+wtIgkrsw4KMdIpW+ZZDLd5Br/RXDNvTqzrLgjDdTnp0w7RQSq407H5uR3ThPuMJrzQM+A9nHL2esnzVFg==",
+                         "nugetArchiveSha256":  "704a2b612aeac16a7e5a2fbe8a02bd706c4c1ae9842b4336e129af18cbee97a1",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.Core",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-3fJ6UnkoiNBeeczKd9OozvcE85FvtyYCykmfzEbFW0uB0uT2+keKdconUGkz9qYlhaq1RJDTFptXOooQBYLijA==",
+                         "nugetArchiveSha256":  "09b5c77698885dcf8fc3a4a9edaf61d2b382a2d2d17db9cb8ca8f381117ae870",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.Dmo",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-YWX+07lP0bObT4IOknjhK66QInHZ8TuEyIFIXv4pPAOnfiRRzL/SN/Gj6qKLGmizicr+wKZEbHiw5VMnVn/OfA==",
+                         "nugetArchiveSha256":  "900e444a476de744721ab33589d58732c408cd24d8cae44d49f1262b77287b10",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.Midi",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-/YiJWtG6EAIt//BYgd6SMudDT/A4cPgX8qpTbV9sxfJenSli8ujDEkPNF/Fa73YCeimK2bA0K3BmsgQ4olN+Nw==",
+                         "nugetArchiveSha256":  "495c23acc6d3de742a017618a48afe4dc33780dfd3b56a3b2894689c7c85b8c8",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.Wasapi",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-1j8+HaeAJXFaDaIeVpnaahwAa3ZvMog2bswgmY1JSDysAbeehRx+PIeC0AbNyXZr5gvhu9PfOPD7xwuAEKJcbw==",
+                         "nugetArchiveSha256":  "b74fa3c875bb7e9f5fd1616b05c9325e2ffed5dc333ab9666627d759da992615",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.WinForms",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-2CFII/mxJCJX/xurB4rx/fAcEbwhr0pH/WWxiYvHZJiOi+9qYxJWmabP+qG220aALP2vhj+fNddceZ7L/uO+eA==",
+                         "nugetArchiveSha256":  "219c990b69626d5ad0b6a3b304e5bd1d986ca04b37ecd78fa832525e32df1dbc",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NAudio.WinMM",
+                         "version":  "3.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-qeedyr0TtKWjEirwVG2ZkL1ecYVUfyh+s0YLsau6XC2FqyqT42LfR96kVEuDdv6U9LUp+aNGDiHO5MK/td0BAA==",
+                         "nugetArchiveSha256":  "10e13ddd465e48bd843041e6b5bf54e5476a462971b5eb6c057455b448b3e6da",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://naudio.github.io/NAudio/",
+                         "authors":  "Mark Heath",
+                         "repositoryCommit":  "0f6b856dd16396fe0fa5bbe58d140b47b048306f"
+                     },
+                     {
+                         "id":  "NodaTime",
+                         "version":  "3.2.2",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-dmju5W0UYC3QP/UJM0juKAZkH0HSDMp0gH91A0+mT9M0kgyM2Jm67hUZPl/WRQLq8Lijjqmdk8kyAViWFWM7dA==",
+                         "nugetArchiveSha256":  "e19001c39f8c16183093dfe78f5a4ac7a433a6a8559830f147f3dcd5980fe548",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "https://nodatime.org/",
+                         "authors":  "Jon Skeet",
+                         "repositoryCommit":  "e56daa2599a4d1917065c015bda923e7a352a236"
+                     },
+                     {
+                         "id":  "runtimepack.Microsoft.NETCore.App.Runtime.win-x64",
+                         "version":  "10.0.11",
+                         "type":  "runtimepack",
+                         "dependencySha512":  "",
+                         "nugetArchiveSha256":  "822b247bddbd88a290a8072be89815ffeac26e5aac0d41b1eab95fda5279f443",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  null,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json",
+                                        "Brain.Updater.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "e2f47b0110ed922f21a1522da67279133ce28f32"
+                     },
+                     {
+                         "id":  "runtimepack.Microsoft.Windows.SDK.NET.Ref",
+                         "version":  "10.0.26100.57",
+                         "type":  "runtimepack",
+                         "dependencySha512":  "",
+                         "nugetArchiveSha256":  "eaa0e3b938319f75beac5c046c84ef57212c2743e9263e0db33b2019ab70b524",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  null,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json",
+                                        "Brain.Updater.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "",
+                         "license":  "",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://aka.ms/WinSDKLicenseURL",
+                         "projectUrl":  "https://aka.ms/WinSDKProjectURL",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64",
+                         "version":  "10.0.11",
+                         "type":  "runtimepack",
+                         "dependencySha512":  "",
+                         "nugetArchiveSha256":  "3aaa3c2ac928a0da1d677caeee6405d1cdd0ae1ccd7a23a8e293a8cb6f009669",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  null,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "e2f47b0110ed922f21a1522da67279133ce28f32"
+                     },
+                     {
+                         "id":  "SQLitePCLRaw.bundle_e_sqlite3",
+                         "version":  "2.1.12",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-mAgscpQMLw5/nfA1Q5oJVAT29yROUo1ifZGbbTpx/lwZpSxMUGoYbKfmvdm8oXER+RzxqBmmQzeBEVKfeHv2nw==",
+                         "nugetArchiveSha256":  "a9a06e6b5a313f6ef3675f91997d012adeffe8aa9e1ffd69ed46a4e685b054e1",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "",
+                         "authors":  "Eric Sink",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "SQLitePCLRaw.core",
+                         "version":  "2.1.12",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-ETpNw9DY3ckWLgRRAeCHj+GKOuPi61aeczkXhgHexUvqoZBAYg8RYESE2J7O1M7+o6QbdSEZwrw9bfqztUVWXg==",
+                         "nugetArchiveSha256":  "af06904138ffa6dc95a599133d64d254716d6facc7543a6b3b910793dae9dca5",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "",
+                         "authors":  "Eric Sink",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "SQLitePCLRaw.lib.e_sqlite3",
+                         "version":  "2.1.12",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-fWi8Dbknuhgg72fWinIdjXVaqO1hHL4YBBwVLnr7e1c9TAZwJ0QE38j9syW1hwx6HaqEVTwI+O07WPdZn8Rp0w==",
+                         "nugetArchiveSha256":  "4a22c02ffcf489792903cf263def9fce27739716883f965f0b5eeff1637430ac",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "",
+                         "authors":  "Eric Sink",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "SQLitePCLRaw.provider.e_sqlite3",
+                         "version":  "2.1.12",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-W3oH4XIfCzFrgUSDKHhN6N+dgzA5YHOR2VxX8GB6Qy7CyrJJgxPEG8NirgYWlPQC5P2jz2knSsexWu4tDUL33g==",
+                         "nugetArchiveSha256":  "df2b3271992e5d719186c4671e3cf4f8658097c154cbcd41494ab594c5997595",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "",
+                         "authors":  "Eric Sink",
+                         "repositoryCommit":  ""
+                     },
+                     {
+                         "id":  "System.Numerics.Tensors",
+                         "version":  "9.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-hyJB4UlpAi19Xr9AXzu2NuagKC4lPfHObNMEAA0HmqFz2rX7wKgzeYzO/jM/eBHDhnUGFFEjk5cOoJaxqg5J4A==",
+                         "nugetArchiveSha256":  "b750243c36002a62b28b1ac5d3fbc284ad340ba1494cc36aca110611a0b1f959",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Brain.Speech.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+                     },
+                     {
+                         "id":  "System.Security.Cryptography.ProtectedData",
+                         "version":  "10.0.1",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-9SqHNq+lAjZeyPcm69FTQEjr+wsRYvkS3aW8yxoEndVYwDRkCrsP/44QPqpWHwzevoX26rkOoQ6kr7GZWngw2A==",
+                         "nugetArchiveSha256":  "076b10e6b7eee1f44ecd40db8b4036ac73eadbb4039906b7939e8c7e913569d0",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Calendar.Worker.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "fad253f51b461736dfd3cd9c15977bb7493becef"
+                     }
+                 ],
+    "notices":  [
+                    {
+                        "file":  "licenses/LICENSE-Asio-1.24.0.txt",
+                        "sha256":  "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Darts-Clone.txt",
+                        "sha256":  "73837d3834d5b8e7d5f0b14005ed305e1c5eb90dd0341dc191240e1b5bd44579"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Eigen-3.4.0-APACHE.txt",
+                        "sha256":  "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Eigen-3.4.0-BSD.txt",
+                        "sha256":  "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Eigen-3.4.0-MINPACK.txt",
+                        "sha256":  "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Eigen-3.4.0-MPL2.txt",
+                        "sha256":  "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Gemma4",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-hclust-cpp-2026-02-25.txt",
+                        "sha256":  "e361d842da1d290351860ad6dcce2673a1e42e4f873a3ae1ff4eb92c6adaa882"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Ical.Net",
+                        "sha256":  "fe4667af79d01506cfda6062136861426248a216bb84b39b76324afab70ea670"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-kaldi-decoder-0.3.0.txt",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-kaldifst-1.8.0.txt",
+                        "sha256":  "a682d6efd1ee5dee08a8e405c233c2c198ea70ae0718129daa83ab58cfe31c5d"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-kaldi-native-fbank-1.22.3.txt",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-KissFFT-BSD-3-Clause.txt",
+                        "sha256":  "4d6bcab46f27d6d0c878e8305d4bdcfe040d52bf6656b9771f04c9fb9902c0ed"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-llama.cpp",
+                        "sha256":  "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-LLVM-OpenMP.txt",
+                        "sha256":  "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.Identity.Client-4.88.0.txt",
+                        "sha256":  "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.IdentityModel.Abstractions-8.14.0.txt",
+                        "sha256":  "cba03f5387b05405e56b688376421acae396136af4b5116738dc6e5160f87ddd"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.NETCore.App.Runtime.win-x64-10.0.11.txt",
+                        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.Web.WebView2-1.0.3719.77.txt",
+                        "sha256":  "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.Windows.AI.MachineLearning-2.1.74.txt",
+                        "sha256":  "66395f8cb219087fae2bd025010bd9076b736c14f03b48f20295471c0c376814"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.AI-2.4.4.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.Foundation-2.3.9.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.InteractiveExperiences-2.1.6.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.ML-2.1.74.txt",
+                        "sha256":  "656aab74c15aa9f9964bcdcc993eb2755cbdb4822d5e0e3bc61d2e281897f758"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.Search-2.4.4.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.Widgets-2.0.5.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK.WinUI-2.3.6.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsAppSDK-2.4.0.txt",
+                        "sha256":  "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Microsoft.WindowsDesktop.App.Runtime.win-x64-10.0.11.txt",
+                        "sha256":  "a89886665765362eb77e0f8e26602c924520041d1711b2eedc136434fe4d01ab"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-NAudio-3.0.1.txt",
+                        "sha256":  "e518e168af44d37da3de236e719c986169e47b46b90e37c1355056175744e037"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-nlohmann-json-3.12.0.txt",
+                        "sha256":  "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-NodaTime",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-onnxruntime-1.27.1.txt",
+                        "sha256":  "c250d6278f0b47a6439fb7592b08b58a55eb9f535aa49a1db63211c3f982b674"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-onnxruntime-managed-1.22.1.txt",
+                        "sha256":  "c250d6278f0b47a6439fb7592b08b58a55eb9f535aa49a1db63211c3f982b674"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-PortAudio-19.7.0.txt",
+                        "sha256":  "ec52a1952d701f94e5135719a47376da4ee0b4a0201f1cafb49f61db6480ac3d"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-Qwen3",
+                        "sha256":  "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-SherpaOnnx-1.13.5.txt",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-simple-sentencepiece-0.7.txt",
+                        "sha256":  "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-SQLitePCLRaw-2.1.12.txt",
+                        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-System.Numerics.Tensors-9.0.0.txt",
+                        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-ThreadPool.txt",
+                        "sha256":  "1b3d138151fb00f864f60196e98cb92cf8ae5d2da6727455415dabebb8504748"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-TitaNet-CC-BY-4.0.txt",
+                        "sha256":  "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-WebSocketPP.txt",
+                        "sha256":  "5ba81a1ed402517dce2581fa2d4042baf6a9c8ca0fe94fa6a7043ce6ab23064f"
+                    },
+                    {
+                        "file":  "licenses/LICENSE-WeSpeaker-CC-BY-4.0.txt",
+                        "sha256":  "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Eigen-3.4.0-README.txt",
+                        "sha256":  "c83230b770f17ef1386ea1fd3681271dd98aa93646bdbfb5bff3a1b7050fff9d"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-KissFFT.txt",
+                        "sha256":  "a2840585f8411be8e6826a31ef15ae65c950bd74a2437a73b013398a934ad0c6"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.NETCore.App.Runtime.win-x64-10.0.11.txt",
+                        "sha256":  "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.Web.WebView2-1.0.3719.77.txt",
+                        "sha256":  "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.Windows.AI.MachineLearning-2.1.74.txt",
+                        "sha256":  "fb0af774b4d7cffc5b9d046f2aaeade2f37df2f80abf8033c95dfffcc77a8866"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.WindowsAppSDK.ML-2.1.74.txt",
+                        "sha256":  "fb0af774b4d7cffc5b9d046f2aaeade2f37df2f80abf8033c95dfffcc77a8866"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.WindowsAppSDK.WinUI-2.3.6.txt",
+                        "sha256":  "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-Microsoft.WindowsAppSDK-2.4.0.txt",
+                        "sha256":  "572b43d41dea717dae7dc5de69acb20a74df025e8f5a3c0aa6f7bca02615e23c"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-NodaTime",
+                        "sha256":  "b20873f8469e39d5d09bfbafa9ceb101d555cf8de61f8c2a31394161d3b4c6dd"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-onnxruntime-1.27.1.txt",
+                        "sha256":  "fb0af774b4d7cffc5b9d046f2aaeade2f37df2f80abf8033c95dfffcc77a8866"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-onnxruntime-managed-1.22.1.txt",
+                        "sha256":  "e00f828e0a33de591a355ae6606d2625f5758da7d2c844db7821c9dd3e3647b6"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-OpenFst-1.8.5.txt",
+                        "sha256":  "4300529197035fd3452350718a0b8cee984e9412c9932d7f35fcde849fc97a4b"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-System.Numerics.Tensors-9.0.0.txt",
+                        "sha256":  "40686c6447a7d5b5d3693068e4571b5f483d7ed335aeee773ef662440de4c5d5"
+                    },
+                    {
+                        "file":  "licenses/NOTICE-System.Security.Cryptography.ProtectedData-10.0.1.txt",
+                        "sha256":  "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+                    }
+                ],
+    "effectiveBundledSpeechRuntime":  {
+                                          "formatVersion":  1,
+                                          "version":  "1.13.5",
+                                          "commit":  "3dc7c569f31ca2cd4a20ed6f7db780327e6714c5",
+                                          "ttsEnabled":  false,
+                                          "archiveUrl":  "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.5/sherpa-onnx-v1.13.5-win-x64-shared-MT-Release-no-tts.tar.bz2",
+                                          "archiveBytes":  22925630,
+                                          "archiveSha256":  "7c9dbcd3d38f71e2ee25dafc270e91d30f0684be8526c3c19cac1aedb073033d",
+                                          "manifestFile":  "sherpa-runtime.json",
+                                          "manifestSha256":  "110e64037d4f64b4314803b5a5361cfd9019ef3baa6dfd1191f9c99df17fd6ac",
+                                          "managedBinding":  {
+                                                                 "Name":  "sherpa-onnx.dll",
+                                                                 "Size":  51200,
+                                                                 "Sha256":  "74159acf873a449491363aa4670a8ee8c51ccfa825cadea77710f273d9477919",
+                                                                 "NuGetPackage":  "org.k2fsa.sherpa.onnx",
+                                                                 "NuGetVersion":  "1.13.5",
+                                                                 "NuGetArchiveSha256":  "e254e6b92316ae5162a34ee9aef48b49a7ed6312f0bce0730b27a8cad1ef8a5e"
+                                                             },
+                                          "files":  [
+                                                        {
+                                                            "file":  "onnxruntime.dll",
+                                                            "bytes":  17378304,
+                                                            "sha256":  "b9f6713c3602a4742680a7e6a77e3f9ac4a676ad9447bce609e53efcda795d7e"
+                                                        },
+                                                        {
+                                                            "file":  "onnxruntime_providers_shared.dll",
+                                                            "bytes":  104960,
+                                                            "sha256":  "1f8b8ebfb07aad2c692669ba77c45b5a24e72b9c708bc3f2be4103ff29370c60"
+                                                        },
+                                                        {
+                                                            "file":  "sherpa-onnx.dll",
+                                                            "bytes":  51200,
+                                                            "sha256":  "74159acf873a449491363aa4670a8ee8c51ccfa825cadea77710f273d9477919"
+                                                        },
+                                                        {
+                                                            "file":  "sherpa-onnx-c-api.dll",
+                                                            "bytes":  3234816,
+                                                            "sha256":  "27336564da6c3952fea5108e6d0ff1e5691537754cb33ac8576b7ee2e1290878"
+                                                        }
+                                                    ],
+                                          "source":  "official-no-tts-release-archive-with-managed-nuget-binding",
+                                          "replacesNativeNuGetPackage":  "org.k2fsa.sherpa.onnx.runtime.win-x64/1.13.5"
+                                      },
+    "bundledAiRuntime":  {
+                             "build":  "b10809",
+                             "commit":  "5266f24da75dc449bd56cbed7addb9c8e4a6a73e",
+                             "archiveSha256":  "9df3158ed228a641a4b127942d7f459f24c9e13f04682659d05c00c80099b6b5",
+                             "licenseFiles":  [
+                                                  {
+                                                      "Name":  "LICENSE-llama.cpp",
+                                                      "Size":  1078,
+                                                      "Sha256":  "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+                                                  },
+                                                  {
+                                                      "Name":  "LICENSE-LLVM-OpenMP",
+                                                      "Size":  19741,
+                                                      "Sha256":  "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4"
+                                                  },
+                                                  {
+                                                      "Name":  "LICENSE-Qwen3",
+                                                      "Size":  11343,
+                                                      "Sha256":  "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+                                                  },
+                                                  {
+                                                      "Name":  "LICENSE-Gemma4",
+                                                      "Size":  11358,
+                                                      "Sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                                                  }
+                                              ]
+                         },
+    "limitations":  [
+                        "NuGet license metadata is informational; upstream license terms still apply.",
+                        "NuGet content fingerprints are compared to restore metadata; raw archive bytes are checked against their separate cache fingerprint.",
+                        "Single-file helper descriptions come from serialized build outputs; executable hashes are checked separately, not by extracting embedded descriptions.",
+                        "Optional speech/model downloads are separate from the app package and retain their own terms.",
+                        "The speech native payload comes from the pinned official no-TTS release archive; its effectiveBundledSpeechRuntime record overrides any historical NuGet native dependency attribution.",
+                        "This inventory does not assert vulnerability clearance, signing, or installation acceptance."
+                    ]
+}
