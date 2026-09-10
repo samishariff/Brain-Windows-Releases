@@ -1,9 +1,9 @@
 ﻿{
     "formatVersion":  1,
-    "version":  "1.0.3.7",
-    "sourceCommit":  "0d3df3cb62097ff62aac78237005840c79e72ac5",
+    "version":  "1.0.3.10",
+    "sourceCommit":  "73694cb95e5e94c415ea962931cfa0376402724f",
     "setupFile":  "Set up Brain.exe",
-    "setupSha256":  "8549b11f89c7ac58796a43ea053bc00718ad50b7f7320e80e2ddf78688bb856b",
+    "setupSha256":  "8d6a9b1c7ce2146462c7a5916a2695b545d8bc585330e8c6add9fa2b6372e95e",
     "setupBytes":  143545384,
     "publicCertificateSha256":  "76da11594d68162a19059fc73a4e446cbe2ba98f0d9f0b5bab268d8839598416"
 }
