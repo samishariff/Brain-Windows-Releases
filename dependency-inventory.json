@@ -5,30 +5,30 @@
                    {
                        "file":  "Brain.Windows.App.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "d899df84138fbf4c799f036e65ed737b7c614725a2f26047a823e5835633f0f9",
+                       "sha256":  "11d3624f37df122ea820bdb9439362c2532b1865808258b7834d8e7cd21a3246",
                        "executableFile":  null,
                        "executableSha256":  null
                    },
                    {
                        "file":  "Brain.Speech.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "aeebba2ba13c8756eda057a940ed521112d0378af7e48082c3468b1215d8bca7",
+                       "sha256":  "b74b716ce6775175760c61b52502ab1fdff0373622bd0f019ea003b2c72f6b67",
                        "executableFile":  "Brain.Speech.Worker.exe",
-                       "executableSha256":  "45ea5075299b0c79b4f940492494874d53ea7d478cb881fdcb15c4d41dbd163d"
+                       "executableSha256":  "6a781f30243ea7a0c91697b1d10a62c8246527bab98f6cb21166e34cf67e5f40"
                    },
                    {
                        "file":  "Brain.Updater.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
                        "executableFile":  "Helpers/updater/Brain.Updater.exe",
-                       "executableSha256":  "e3750541630b342145026263e285a38adaf82b5ebbf5846d8930225a98bb5717"
+                       "executableSha256":  "e6d4d950ebdc974f2974207f1688e771e5728d461b7f1d6f029b2d5e4a69749e"
                    },
                    {
                        "file":  "Brain.Calendar.Worker.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "adf6657637279c55cf50535fac69c833ff62fead91052aea9da42244a82ff3f7",
                        "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
-                       "executableSha256":  "19ba1e026e2dad41a1d81c6c71bba54642d6fe35191df196063471e91e623c8e"
+                       "executableSha256":  "b4ee25700de8c4ce131a41e9cdac26a2a736c260aac8e405b89996a9c2ab4530"
                    }
                ],
     "packages":  [
