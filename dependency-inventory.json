@@ -1,34 +1,41 @@
 {
-    "formatVersion":  2,
+    "formatVersion":  3,
     "scope":  "published-dotnet-dependencies-and-bundled-ai-runtime",
     "inputs":  [
                    {
                        "file":  "Brain.Windows.App.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "5721c61b402805534ce8954739088275721c287055b80c19f0a55913085699a0",
+                       "sha256":  "c2dfa93a36b850096dedeb3779f1f42471b54a3c28d7fffd2dcf7eb5f3cff2ea",
                        "executableFile":  null,
                        "executableSha256":  null
                    },
                    {
+                       "file":  "Cli/Brain.Cli.deps.json",
+                       "origin":  "msix-payload",
+                       "sha256":  "dc1ff8749a05f29e3eeb737a580ed68017a59481cc3d2b63f043573adfcce6bf",
+                       "executableFile":  "Cli/Brain.Cli.exe",
+                       "executableSha256":  "34b284e4d161f23243009da2e8200950c4b1dc45d9c72e626c211fabee381bf1"
+                   },
+                   {
                        "file":  "Brain.Speech.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "9b8cea4479d46c16bb0a9149de0a729cd18ba9b316087fad8667e215fb78f0de",
+                       "sha256":  "d8eb6de3945041388f226b8ecf62e4ba4a3e3b68cdb06928498310258c0af803",
                        "executableFile":  "Brain.Speech.Worker.exe",
-                       "executableSha256":  "58f9d2dbfba99dc69511e9c05520b26d8bb31332cc1352b088f001e78a5e1991"
+                       "executableSha256":  "e0a23c377082c14f9686ed95fe8a9292ab5d7dc8b60e1cfcc3b143e24ed02fb7"
                    },
                    {
                        "file":  "Brain.Updater.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
                        "executableFile":  "Helpers/updater/Brain.Updater.exe",
-                       "executableSha256":  "491f9df38450d42e2fcea9791679aac02916b8d0d7355866c1042819c404bf5d"
+                       "executableSha256":  "2e3a3bc21fd1c4c05103c096ac718a5db9c2a30f32d934684b1ff56f6f664f8a"
                    },
                    {
                        "file":  "Brain.Calendar.Worker.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "adf6657637279c55cf50535fac69c833ff62fead91052aea9da42244a82ff3f7",
                        "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
-                       "executableSha256":  "c25fc857a126b58704fad898947af57c16ec988f6d7ce2d893b4b842f2e3c316"
+                       "executableSha256":  "9b5c156ce305b64b0b16ea5f87a7df42ddfb00dff49f8d0023a12b8ba76de351"
                    }
                ],
     "packages":  [
@@ -61,7 +68,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -80,7 +88,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -89,6 +98,586 @@
                          "projectUrl":  "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
                          "authors":  "Microsoft",
                          "repositoryCommit":  "e2f47b0110ed922f21a1522da67279133ce28f32"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.AI.Abstractions",
+                         "version":  "10.8.3",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-K0B05oApxmviWalNHPMBBcRC7erKiDATz3ENNR/jqTR9JwIwLRefgDhj2jCRwL1aca99pXUe0qyQC73/xIuZig==",
+                         "nugetArchiveSha256":  "7be7e10d0663efb94ddbed605d5c03ccfe80bb6852ca44cdba1dd1e78ee7ca76",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "ccb356f31db9d894807c4fd0c97c2f41553d1524"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Caching.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-4ZFBNE+jzR+CrWWlhOesnmywCW7pYKT0dxyAQRdL11yJwxe4jvcAu31eorFtEkoFeCDcUTeNssgPv2yaRRptaQ==",
+                         "nugetArchiveSha256":  "c663193051052383d0219cdba4381235e0ff03a1c8ce93db323ad1eceb4636b4",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-H4SWETCh/cC5L1WtWchHR6LntGk3rDTTznZMssr4cL8IbDmMWBxY+MOGDc/ASnqNolLKPIWHWeuC1ddiL/iNPw==",
+                         "nugetArchiveSha256":  "32c2ec9153e9902be8bf9f835886802c2b75a9f4515f8bb6dbc787c6fa44d1d8",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-5Vnd2I75DmZCVEjSynIdJ/0EGafgnLQwgR3t2C2/fkjx/nRG+cLwxLLdInoHeCEpkD5K4Ov/g9ZCRYrl4TRsaA==",
+                         "nugetArchiveSha256":  "632deba4e226d5510f7584f219e1bb4bc6cd4fe001692262620b155957991ad5",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.Binder",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-tMF9wNh+hlyYDWB8mrFCQHQmWHlRosol1b/N2Jrefy1bFLnuTlgSYmPyHNmz8xVQgs7DpXytBRWxGhG+mSTp0g==",
+                         "nugetArchiveSha256":  "612896a00dd5411db693af9b484014a9e1bb503cd99497c75834ee6d43b957c5",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.CommandLine",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-CRj5clwZciVs46GMhAthkFq3+JiNM15Bz9CRlCZLBmRdggD6RwoBphRJ+EUDK2f+cZZ1L2zqVaQrn1KueoU5Kg==",
+                         "nugetArchiveSha256":  "95d4e2445aa7bfcfe9034825e9447ee030c600864e7fdf8c85a2d63ae28e5ce2",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.EnvironmentVariables",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-TmFegsI/uCdwMBD4yKpmO+OkjVNHQL49Dh/ep83NI5rPUEoBK9OdsJo1zURc1A2FuS/R/Pos3wsTjlyLnguBLA==",
+                         "nugetArchiveSha256":  "51ac9f7aaac098dc9f3a4ba170129f8fc5298d0a95fd932a5ab0f2c42486d4c0",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.FileExtensions",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-LqCTyF0twrG4tyEN6PpSC5ewRBDwCBazRUfCOdRddwaQ3n2S57GDDeYOlTLcbV/V2dxSSZWg5Ofr48h6BsBmxw==",
+                         "nugetArchiveSha256":  "acdfb7aeaac78936817c780ff84e1d03c426d9c1493df6c471df77c8a2ecaa54",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.Json",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-BIOPTEAZoeWbHlDT9Zudu+rpecZizFwhdIFRiyZKDml7JbayXmfTXKUt+ezifsSXfBkWDdJM10oDOxo8pufEng==",
+                         "nugetArchiveSha256":  "54216e920b31890d8c14613a4433054c6a290476dc64bdadd0447b10d6855d16",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Configuration.UserSecrets",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-B4qHB6gQ2B3I52YRohSV7wetp01BQzi8jDmrtiVm6e4l8vH5vjqwxWcR5wumGWjdBkj1asJLLsDIocdyTQSP0A==",
+                         "nugetArchiveSha256":  "b88a08a5b0cf44c7c5a93f18ea3ff01db142025cba1f537daa9c67a2645b1c8a",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.DependencyInjection",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-f0RBabswJq+gRu5a+hWIobrLWiUYPKMhCD9WO3sYBAdSy3FFH14LMvLVFZc2kPSCimBLxSuitUhsd6tb0TAY6A==",
+                         "nugetArchiveSha256":  "2d89bd855968fd1f5cd9a00a1ec0d8279bd8f54d3edc9bdc9667b7a2edc1b6f4",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.DependencyInjection.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-z/2xXlFw2aLGjHyEm6E0tQ+In6VfzQzTrtArbQ2c0TQE16ZbyDCMGPvaUT9I0s8rgy9sRWlU2P9waW37qV04qA==",
+                         "nugetArchiveSha256":  "dabf90bddd2edf33837d0d4d00bfaabbe5b95c66aa2639b7d5b1ba48624a667d",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Diagnostics",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-xjkxIPgrT0mKTfBwb+CVqZnRchyZgzKIfDQOp8z+WUC6vPe3WokIf71z+hJPkH0YBUYJwa7Z/al1R087ib9oiw==",
+                         "nugetArchiveSha256":  "a3b4240a2b04705221db6eea0547d615c8b69ece1c804a4baa95fb62f1c64e84",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Diagnostics.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-9uWiKpeOVac355STyChWR/pliFX/5CeLqChW9kKsaxyDH4EUTZxMkT4Jwp/J/peLm0GBFmSX5c0WCse3yCnq1Q==",
+                         "nugetArchiveSha256":  "be157a2858410586e06a919a9f24a21e1c9c9c7495a8fa88ca783c3b1017890f",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.FileProviders.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-c5zqFCY9DiIpMovLd7/d/CTiEtrMOuQ639dhv3PABtKQIKNQikSHwQt8+N679uii9q+B55lgK28Uv64FOwEu8w==",
+                         "nugetArchiveSha256":  "bb79d3099a6aaa7e872159b43b6e199a6cb23656e65239aaf000de28cbb82725",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.FileProviders.Physical",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-UZUQ74lQMmvcprlG8w+XpxBbyRDQqfb7GAnccITw32hdkUBlmm9yNC4xl4aR9YjgV3ounZcub194sdmLSfBmPA==",
+                         "nugetArchiveSha256":  "d91c3f73004efbf037418d888cdfdcf18d0b86d0b5a9304bed5749883d49d944",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.FileSystemGlobbing",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-5hfVl/e+bx1px2UkN+1xXhd3hu7Ui6ENItBzckFaRDQXfr+SHT/7qrCDrlQekCF/PBtEu2vtk87U2+gDEF8EhQ==",
+                         "nugetArchiveSha256":  "1137d54ddb1d06da7af448202e0fc00114d05b894b41855d565757210aec8d90",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Hosting",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-yKJiVdXkSfe9foojGpBRbuDPQI8YD71IO/aE8ehGjRHE0VkEF/YWkW6StthwuFF146pc2lypZrpk/Tks6Plwhw==",
+                         "nugetArchiveSha256":  "b58d20ea50b2db2169ac4f8d9ab8a253a1469b0a73c55f0ba84d1914d288c2e3",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Hosting.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-5LugpYGHk+mkn0a8IZgcyfBca8PCTAU9RQFoMrTdtOOidq88M2SI5f3px6ugnzgxC+eTkvYYJi8pzlUnG5xdAQ==",
+                         "nugetArchiveSha256":  "59589a29dd1c6c7697cc561de82ba85effced1179b9f9616c406e66fa1581820",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-BStFkd5CcnEtarlcgYDBcFzGYCuuNMzPs02wN3WBsOFoYIEmYoUdAiU+au6opzoqfTYJsMTW00AeqDdnXH2CvA==",
+                         "nugetArchiveSha256":  "3feccf01a74b2fade4fc6a8adf8fea0a1a908d8f5a211c597f1941f65aac4abb",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.Abstractions",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-zkFxGYUvdxAvIKTyXHrmW+Sux53D4SezD9dMyZ6hrwwzPQJNuwCRy1f5W7AvYTqacEGhWF2XderRQG1OvbV8og==",
+                         "nugetArchiveSha256":  "99ca914981b742d06508051bc7b326692bc6e8a2ad005c7e1356787405a84d66",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.Configuration",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-j8zcwhS6bYB6FEfaY3nYSgHdpiL2T+/V3xjpHtslVAegyI1JUbB9yAt/BFdvZdsNbY0Udm4xFtvfT/hUwcOOOg==",
+                         "nugetArchiveSha256":  "eff4d63b56aaf217606dc4c42830562238120bd2a914dde4467317fb5d9b3a45",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.Console",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-treWetuksp8LVb09fCJ5zNhNJjyDkqzVm83XxcrlWQnAdXznR140UUXo8PyEPBvFlHhjKhFQZEOP3Sk/ByCvEw==",
+                         "nugetArchiveSha256":  "46c6e5a3b1923133abe37f3be8a91dbea4bac14f53ca9d72a052b7b4be740819",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.Debug",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-A/4vBtVaySLBGj4qluye+KSbeVCCMa6GcTbxf2YgnSDHs9b9105+VojBJ1eJPel8F1ny0JOh+Ci3vgCKn69tNQ==",
+                         "nugetArchiveSha256":  "9fff8a45596c80a9b5edc24899aa003c700e6c7a40a56fe17fa98cb10146aef6",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.EventLog",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-EWda5nSXhzQZr3yJ3+XgIApOek+Hm+txhWCEzWNVPp/OfimL4qmvctgXu87m+S2RXw/AoUP8aLMNicJ2KWblVA==",
+                         "nugetArchiveSha256":  "e11276afcd11b48dd05008420186c69c0d187139a8baab59bd053da370ab077f",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Logging.EventSource",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-+Qc+kgoJi1w2A/Jm+7h04LcK2JoJkwAxKg7kBakkNRcemTmRGocqPa7rVNVGorTYruFrUS25GwkFNtOECnjhXg==",
+                         "nugetArchiveSha256":  "b6a0b5dd0c247f8c75e221b13989574f27a837c28f557fa6ba9bf62dda73187a",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Options",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-srnhnk7nE8krBiIXp71LvBmKBtraBONWSRzdjJgRv1Ko9Mp8IVNqv4vIS9hGeVteBig8aQkva9ZG+sC+o5sVcA==",
+                         "nugetArchiveSha256":  "4b890f1ecc865a90ad99d8fe4bf2149d93aa600037461859c3be965aae90b308",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Options.ConfigurationExtensions",
+                         "version":  "10.0.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-tL9cSl3maS5FPzp/3MtlZI21ExWhni0nnUCF8HY4npTsINw45n9SNDbkKXBMtFyUFGSsQep25fHIDN4f/Vp3AQ==",
+                         "nugetArchiveSha256":  "5c602ce43c4cbd69e68d7f1da91c0a634becb92e34487bec7c9a81d6b3b82fb9",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "b0f34d51fccc69fd334253924abd8d6853fad7aa"
+                     },
+                     {
+                         "id":  "Microsoft.Extensions.Primitives",
+                         "version":  "10.0.10",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-5wu/GrYVd8mG2DVUw3vFJzF+O336TyTGg/Kmcgw9bfwYhCoFiV5lR5QeEmKecJyrW4W54nMfD3p3589E8a7czQ==",
+                         "nugetArchiveSha256":  "a8e29bc5a9879776fe7dba4b42cdc08e781ae1ccf57b9d12cd0402ad7ca8f1c7",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "MIT",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/MIT",
+                         "projectUrl":  "https://dot.net/",
+                         "authors":  "Microsoft",
+                         "repositoryCommit":  "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
                      },
                      {
                          "id":  "Microsoft.Identity.Client",
@@ -160,6 +749,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "file",
@@ -323,6 +913,46 @@
                          "repositoryCommit":  ""
                      },
                      {
+                         "id":  "ModelContextProtocol",
+                         "version":  "2.2.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-4Pb9u02Nwsp0poueDsqNdyGRojFxOYpljB7zDBsq+aHL+Afou3OgxlBc3GWFVnsRMRJrUtWqDh3s6k2JgPzmrQ==",
+                         "nugetArchiveSha256":  "d9704e12d5412c97147c74dd89524410bbad86e09bc96472134d9c7269d5c6fc",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "https://csharp.sdk.modelcontextprotocol.io/",
+                         "authors":  "ModelContextProtocol",
+                         "repositoryCommit":  "6fa3825973949a9c4f0cd8af344e15a8db09dc35"
+                     },
+                     {
+                         "id":  "ModelContextProtocol.Core",
+                         "version":  "2.2.0",
+                         "type":  "package",
+                         "dependencySha512":  "sha512-FeBfXU6T8k+jw4afg4sfxdEX2rL/e5oKOk9ROOGztu9k47+7Bz08sdaToYt2XvMY1opNbwxYQOFMj6wH9TInhA==",
+                         "nugetArchiveSha256":  "146b28079d752ce216651f48287f5846e9061e1525c08181c3854fef1a1b7aba",
+                         "archiveMatchesCacheSha512":  true,
+                         "restoredContentMetadataMatchesDependencySha512":  true,
+                         "usedBy":  [
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
+                                    ],
+                         "licenseType":  "expression",
+                         "license":  "Apache-2.0",
+                         "licenseFileSha256":  null,
+                         "licenseUrl":  "https://licenses.nuget.org/Apache-2.0",
+                         "projectUrl":  "https://csharp.sdk.modelcontextprotocol.io/",
+                         "authors":  "ModelContextProtocol",
+                         "repositoryCommit":  "6fa3825973949a9c4f0cd8af344e15a8db09dc35"
+                     },
+                     {
                          "id":  "NAudio",
                          "version":  "3.0.1",
                          "type":  "package",
@@ -332,6 +962,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -352,6 +983,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -372,6 +1004,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -392,6 +1025,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -412,6 +1046,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -432,6 +1067,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -452,6 +1088,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -472,6 +1109,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -512,6 +1150,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json",
                                         "Brain.Updater.deps.json",
                                         "Brain.Calendar.Worker.deps.json"
@@ -534,6 +1173,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json",
                                         "Brain.Updater.deps.json",
                                         "Brain.Calendar.Worker.deps.json"
@@ -556,6 +1196,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -575,7 +1216,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -594,7 +1236,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -613,7 +1256,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -632,7 +1276,8 @@
                          "archiveMatchesCacheSha512":  true,
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
-                                        "Brain.Windows.App.deps.json"
+                                        "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -652,6 +1297,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
+                                        "Cli/Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -935,6 +1581,26 @@
                                                                  "NuGetArchiveSha256":  "e254e6b92316ae5162a34ee9aef48b49a7ed6312f0bce0730b27a8cad1ef8a5e"
                                                              },
                                           "files":  [
+                                                        {
+                                                            "file":  "Cli/onnxruntime.dll",
+                                                            "bytes":  17378304,
+                                                            "sha256":  "b9f6713c3602a4742680a7e6a77e3f9ac4a676ad9447bce609e53efcda795d7e"
+                                                        },
+                                                        {
+                                                            "file":  "Cli/onnxruntime_providers_shared.dll",
+                                                            "bytes":  104960,
+                                                            "sha256":  "1f8b8ebfb07aad2c692669ba77c45b5a24e72b9c708bc3f2be4103ff29370c60"
+                                                        },
+                                                        {
+                                                            "file":  "Cli/sherpa-onnx.dll",
+                                                            "bytes":  51200,
+                                                            "sha256":  "74159acf873a449491363aa4670a8ee8c51ccfa825cadea77710f273d9477919"
+                                                        },
+                                                        {
+                                                            "file":  "Cli/sherpa-onnx-c-api.dll",
+                                                            "bytes":  3234816,
+                                                            "sha256":  "27336564da6c3952fea5108e6d0ff1e5691537754cb33ac8576b7ee2e1290878"
+                                                        },
                                                         {
                                                             "file":  "onnxruntime.dll",
                                                             "bytes":  17378304,
