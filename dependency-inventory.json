@@ -1,41 +1,41 @@
 {
-    "formatVersion":  3,
+    "formatVersion":  4,
     "scope":  "published-dotnet-dependencies-and-bundled-ai-runtime",
     "inputs":  [
                    {
                        "file":  "Brain.Windows.App.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "5d4ce9ffb9826927a67ad3e8061ceb540275234ef57703c65eb33553906a2efb",
+                       "sha256":  "3e6662576642230151935626aaac83f393b06e099f479e5a236f6ecbf9b837df",
                        "executableFile":  null,
                        "executableSha256":  null
                    },
                    {
-                       "file":  "Cli/Brain.Cli.deps.json",
+                       "file":  "Brain.Cli.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "9d5b4eb1478d40c7aeddf869efe67f3a3e5e0c4bbd7cef1d23855abe7e0e147d",
+                       "sha256":  "bb0249c43672f21b3bdda8cb24635e4d410108a2ac17cf6f02a630c9d0cf2ffb",
                        "executableFile":  "Cli/Brain.Cli.exe",
-                       "executableSha256":  "d627a3b05c9c38f300e28adc46c8d70e1ac4c923150b78d6dfcdf6b27d7cde93"
+                       "executableSha256":  "5228120729fd47f8f1d62ec378db59f28aa9b11647014ef1b2928919c792c4b6"
                    },
                    {
                        "file":  "Brain.Speech.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "14b9c323f9ffa53ac62a98c03bf5f8c70b69f9198b4b61576924ae596e7b25a3",
+                       "sha256":  "7556fcc149157b125e8526a00372092668e46512b191b455625337c498e61979",
                        "executableFile":  "Brain.Speech.Worker.exe",
-                       "executableSha256":  "8076ba7caecf0ae450b80cbba9da66ac369f2ff1ea9b98e204d47a1ac1d4af8a"
+                       "executableSha256":  "fac471c58a54436013ebd51d2abed1881f38d9315dad68a99662c0c13e6af657"
+                   },
+                   {
+                       "file":  "Brain.Calendar.Worker.deps.json",
+                       "origin":  "msix-payload",
+                       "sha256":  "647ee59903d3d774504d0eb2343729f7601085a6d0872add07a5b0dadc25fa88",
+                       "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
+                       "executableSha256":  "76578b31fed8901668f6ada71ade7b79d929cb8e60c8ac2d270910d2341714d9"
                    },
                    {
                        "file":  "Brain.Updater.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
                        "executableFile":  "Helpers/updater/Brain.Updater.exe",
-                       "executableSha256":  "f19e32168adfe1846a7d46d50c7462f601f49099a3045f553260484f5af9d9ad"
-                   },
-                   {
-                       "file":  "Brain.Calendar.Worker.deps.json",
-                       "origin":  "single-file-helper-build",
-                       "sha256":  "adf6657637279c55cf50535fac69c833ff62fead91052aea9da42244a82ff3f7",
-                       "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
-                       "executableSha256":  "38f361c6977190ab84e1c70aa2d3ef17b01415f7b1aa131effdf4379d00fd119"
+                       "executableSha256":  "6267ac8c4aabe11a7cf7f41ed6235009e1ab97283036f38746115b5fb0457d98"
                    }
                ],
     "packages":  [
@@ -69,7 +69,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -89,7 +89,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -109,7 +109,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -129,7 +129,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -149,7 +149,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -169,7 +169,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -189,7 +189,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -209,7 +209,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -229,7 +229,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -249,7 +249,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -269,7 +269,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -289,7 +289,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -309,7 +309,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -329,7 +329,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -349,7 +349,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -369,7 +369,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -389,7 +389,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -409,7 +409,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -429,7 +429,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -449,7 +449,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -469,7 +469,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -489,7 +489,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -509,7 +509,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -529,7 +529,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -549,7 +549,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -569,7 +569,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -589,7 +589,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -609,7 +609,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -629,7 +629,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -649,7 +649,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -669,7 +669,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -749,7 +749,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "file",
@@ -922,7 +922,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -942,7 +942,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -962,7 +962,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -983,7 +983,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1004,7 +1004,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1025,7 +1025,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1046,7 +1046,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1067,7 +1067,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1088,7 +1088,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1109,7 +1109,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1150,10 +1150,10 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json",
-                                        "Brain.Updater.deps.json",
-                                        "Brain.Calendar.Worker.deps.json"
+                                        "Brain.Calendar.Worker.deps.json",
+                                        "Brain.Updater.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -1173,10 +1173,10 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json",
-                                        "Brain.Updater.deps.json",
-                                        "Brain.Calendar.Worker.deps.json"
+                                        "Brain.Calendar.Worker.deps.json",
+                                        "Brain.Updater.deps.json"
                                     ],
                          "licenseType":  "",
                          "license":  "",
@@ -1196,8 +1196,9 @@
                          "restoredContentMetadataMatchesDependencySha512":  null,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
-                                        "Brain.Speech.Worker.deps.json"
+                                        "Brain.Cli.deps.json",
+                                        "Brain.Speech.Worker.deps.json",
+                                        "Brain.Calendar.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "MIT",
@@ -1217,7 +1218,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -1237,7 +1238,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -1257,7 +1258,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -1277,7 +1278,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json"
+                                        "Brain.Cli.deps.json"
                                     ],
                          "licenseType":  "expression",
                          "license":  "Apache-2.0",
@@ -1297,7 +1298,7 @@
                          "restoredContentMetadataMatchesDependencySha512":  true,
                          "usedBy":  [
                                         "Brain.Windows.App.deps.json",
-                                        "Cli/Brain.Cli.deps.json",
+                                        "Brain.Cli.deps.json",
                                         "Brain.Speech.Worker.deps.json"
                                     ],
                          "licenseType":  "expression",
@@ -1307,25 +1308,6 @@
                          "projectUrl":  "https://dot.net/",
                          "authors":  "Microsoft",
                          "repositoryCommit":  "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
-                     },
-                     {
-                         "id":  "System.Security.Cryptography.ProtectedData",
-                         "version":  "10.0.1",
-                         "type":  "package",
-                         "dependencySha512":  "sha512-9SqHNq+lAjZeyPcm69FTQEjr+wsRYvkS3aW8yxoEndVYwDRkCrsP/44QPqpWHwzevoX26rkOoQ6kr7GZWngw2A==",
-                         "nugetArchiveSha256":  "076b10e6b7eee1f44ecd40db8b4036ac73eadbb4039906b7939e8c7e913569d0",
-                         "archiveMatchesCacheSha512":  true,
-                         "restoredContentMetadataMatchesDependencySha512":  true,
-                         "usedBy":  [
-                                        "Brain.Calendar.Worker.deps.json"
-                                    ],
-                         "licenseType":  "expression",
-                         "license":  "MIT",
-                         "licenseFileSha256":  null,
-                         "licenseUrl":  "https://licenses.nuget.org/MIT",
-                         "projectUrl":  "https://dot.net/",
-                         "authors":  "Microsoft",
-                         "repositoryCommit":  "fad253f51b461736dfd3cd9c15977bb7493becef"
                      }
                  ],
     "notices":  [
@@ -1518,6 +1500,10 @@
                         "sha256":  "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
                     },
                     {
+                        "file":  "licenses/NOTICE-Microsoft.VC143.CRT-14.44.35211.txt",
+                        "sha256":  "fb77d88d3e28b477adef503e809e1a4d4dd0758c27958e4521e0d34996ad510a"
+                    },
+                    {
                         "file":  "licenses/NOTICE-Microsoft.Web.WebView2-1.0.3719.77.txt",
                         "sha256":  "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
                     },
@@ -1582,26 +1568,6 @@
                                                              },
                                           "files":  [
                                                         {
-                                                            "file":  "Cli/onnxruntime.dll",
-                                                            "bytes":  17378304,
-                                                            "sha256":  "b9f6713c3602a4742680a7e6a77e3f9ac4a676ad9447bce609e53efcda795d7e"
-                                                        },
-                                                        {
-                                                            "file":  "Cli/onnxruntime_providers_shared.dll",
-                                                            "bytes":  104960,
-                                                            "sha256":  "1f8b8ebfb07aad2c692669ba77c45b5a24e72b9c708bc3f2be4103ff29370c60"
-                                                        },
-                                                        {
-                                                            "file":  "Cli/sherpa-onnx.dll",
-                                                            "bytes":  51200,
-                                                            "sha256":  "74159acf873a449491363aa4670a8ee8c51ccfa825cadea77710f273d9477919"
-                                                        },
-                                                        {
-                                                            "file":  "Cli/sherpa-onnx-c-api.dll",
-                                                            "bytes":  3234816,
-                                                            "sha256":  "27336564da6c3952fea5108e6d0ff1e5691537754cb33ac8576b7ee2e1290878"
-                                                        },
-                                                        {
                                                             "file":  "onnxruntime.dll",
                                                             "bytes":  17378304,
                                                             "sha256":  "b9f6713c3602a4742680a7e6a77e3f9ac4a676ad9447bce609e53efcda795d7e"
@@ -1650,12 +1616,34 @@
                                                       "Size":  11358,
                                                       "Sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
                                                   }
-                                              ]
+                                              ],
+                             "visualCppRuntime":  {
+                                                      "version":  "14.44.35211.0",
+                                                      "product":  "Microsoft Visual C++ v14 runtime (x64), Visual Studio 2022 VC\\Redist\\MSVC\\14.44.35112\\x64\\Microsoft.VC143.CRT",
+                                                      "notice":  "licenses/NOTICE-Microsoft.VC143.CRT-14.44.35211.txt",
+                                                      "files":  [
+                                                                    {
+                                                                        "Name":  "msvcp140.dll",
+                                                                        "Size":  557728,
+                                                                        "Sha256":  "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9"
+                                                                    },
+                                                                    {
+                                                                        "Name":  "vcruntime140.dll",
+                                                                        "Size":  124544,
+                                                                        "Sha256":  "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+                                                                    },
+                                                                    {
+                                                                        "Name":  "vcruntime140_1.dll",
+                                                                        "Size":  49792,
+                                                                        "Sha256":  "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+                                                                    }
+                                                                ]
+                                                  }
                          },
     "limitations":  [
                         "NuGet license metadata is informational; upstream license terms still apply.",
                         "NuGet content fingerprints are compared to restore metadata; raw archive bytes are checked against their separate cache fingerprint.",
-                        "Single-file helper descriptions come from serialized build outputs; executable hashes are checked separately, not by extracting embedded descriptions.",
+                        "The single-file updater\u0027s description comes from its serialized build output; its executable hash is checked separately, not by extracting the embedded description.",
                         "Optional speech/model downloads are separate from the app package and retain their own terms.",
                         "The speech native payload comes from the pinned official no-TTS release archive; its effectiveBundledSpeechRuntime record overrides any historical NuGet native dependency attribution.",
                         "This inventory does not assert vulnerability clearance, signing, or installation acceptance."
