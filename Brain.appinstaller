@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
-              Version="1.0.6.0"
+              Version="1.0.7.0"
               Uri="https://samishariff.github.io/Brain-Windows-Releases/Brain.appinstaller">
   <MainPackage Name="SamiShariff.Brain"
                Publisher="CN=Sami Shariff"
-               Version="1.0.6.0"
+               Version="1.0.7.0"
                ProcessorArchitecture="x64"
-               Uri="https://github.com/samishariff/Brain-Windows-Releases/releases/download/v1.0.6.0/Brain-Windows-x64-1.0.6.0.msix" />
+               Uri="https://github.com/samishariff/Brain-Windows-Releases/releases/download/v1.0.7.0/Brain-Windows-x64-1.0.7.0.msix" />
 
 </AppInstaller>

@@ -5,37 +5,37 @@
                    {
                        "file":  "Brain.Windows.App.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "3e6662576642230151935626aaac83f393b06e099f479e5a236f6ecbf9b837df",
+                       "sha256":  "833eb3a829d25485aba1594d94eb639c751133af5692e130e8befae1145635c2",
                        "executableFile":  null,
                        "executableSha256":  null
                    },
                    {
                        "file":  "Brain.Cli.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "bb0249c43672f21b3bdda8cb24635e4d410108a2ac17cf6f02a630c9d0cf2ffb",
+                       "sha256":  "0499b69d0aa9b8867130d38f1505a7c4d8bb123b8f699c0ec8c81492e0d539bf",
                        "executableFile":  "Cli/Brain.Cli.exe",
-                       "executableSha256":  "5228120729fd47f8f1d62ec378db59f28aa9b11647014ef1b2928919c792c4b6"
+                       "executableSha256":  "f22e232f39d2865654c93a65cbefb588b49812028982ab2dcd3aaf0eb2df4673"
                    },
                    {
                        "file":  "Brain.Speech.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "7556fcc149157b125e8526a00372092668e46512b191b455625337c498e61979",
+                       "sha256":  "7cc542396fecd39754b89eb03b4fca213d81cb6cc7516bc316009238fddc6cc6",
                        "executableFile":  "Brain.Speech.Worker.exe",
-                       "executableSha256":  "fac471c58a54436013ebd51d2abed1881f38d9315dad68a99662c0c13e6af657"
+                       "executableSha256":  "9f3eb87445530ad3b7697ce30f18ed49a7bff62955f447142b6d41c2eef29e46"
                    },
                    {
                        "file":  "Brain.Calendar.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "647ee59903d3d774504d0eb2343729f7601085a6d0872add07a5b0dadc25fa88",
+                       "sha256":  "228bb20ab80af6d91b1530e449199fb482a14b15ec4894bf72242ec2c297a297",
                        "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
-                       "executableSha256":  "76578b31fed8901668f6ada71ade7b79d929cb8e60c8ac2d270910d2341714d9"
+                       "executableSha256":  "bcced918129a6928143ffa75b9ea7b16f869b470d38c56d204ca8b056fd7b318"
                    },
                    {
                        "file":  "Brain.Updater.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
                        "executableFile":  "Helpers/updater/Brain.Updater.exe",
-                       "executableSha256":  "6267ac8c4aabe11a7cf7f41ed6235009e1ab97283036f38746115b5fb0457d98"
+                       "executableSha256":  "95b72adbb7226209b3c4427ee5cb33d5ebb3c0a4306023e1b82a228413e232de"
                    }
                ],
     "packages":  [
