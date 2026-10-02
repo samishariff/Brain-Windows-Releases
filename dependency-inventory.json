@@ -14,12 +14,12 @@
                        "origin":  "msix-payload",
                        "sha256":  "7c4077b9094d33042625f2c3fed4ab7e5be348b30d98ebf41945ff8b9d8df34f",
                        "executableFile":  "Cli/Brain.Cli.exe",
-                       "executableSha256":  "85b783b0c350f5ea37d93f4beb6df62ca77541cc8438a38bba6817fc2ff18059"
+                       "executableSha256":  "d54fc849a1c7885cbfea5dac502cf51d8128ed6dc3fd5db36b15abe42d87c5a9"
                    },
                    {
                        "file":  "Brain.Speech.Worker.deps.json",
                        "origin":  "msix-payload",
-                       "sha256":  "eec6a05f209de805f304c662e31826551074b292aa2b6782e2ead0ba5927e7fb",
+                       "sha256":  "e43b7fe5a1c701a67d74afb9c6fc9ef8ef45d5b8ac2ee927eb93dacbc7cba7da",
                        "executableFile":  "Brain.Speech.Worker.exe",
                        "executableSha256":  "eabcc5992d52dd548691470b12d0e8f72041d2240225b62ea4304a5731e7eaed"
                    },
@@ -28,14 +28,14 @@
                        "origin":  "msix-payload",
                        "sha256":  "9ea6114574f1a7a2a683deda438b2e728e6b439ca1c3bce0de0b6117d6ffb661",
                        "executableFile":  "Helpers/calendar/Brain.Calendar.Worker.exe",
-                       "executableSha256":  "8e6652260f1739b90fc422d724d3dd74954df4d06ca8679263bc9c7d4b7e910f"
+                       "executableSha256":  "a4706018bf2e7ca4db5d26e7beb669043e65d27280150b7e1414dcc96ccc3251"
                    },
                    {
                        "file":  "Brain.Updater.deps.json",
                        "origin":  "single-file-helper-build",
                        "sha256":  "79a4eb3f39b293952dff719a1c81ee2a3db79ccfdc7098a49555343ccc95951f",
                        "executableFile":  "Helpers/updater/Brain.Updater.exe",
-                       "executableSha256":  "13908709079f3f16fdaf267d3c5e8801300f540c6fc751413ff677e405d353f6"
+                       "executableSha256":  "a658880e122553a73280ee6cbe29f4ceeebac43cc9b6a03fc1ef94e4a82efff8"
                    }
                ],
     "packages":  [
